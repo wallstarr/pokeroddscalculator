@@ -2,14 +2,14 @@ package com.company;
 
 public class Card {
 
-    enum Suit {
+    public enum Suit {
         CLUBS,
         DIAMONDS,
         HEARTS,
         SPADES
     }
 
-    enum Rank {
+    public enum Rank {
         DEUCE(2),
         THREE(3),
         FOUR(4),
