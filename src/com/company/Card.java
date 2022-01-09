@@ -24,25 +24,29 @@ public class Card {
         KING(13),
         ACE(14);
 
-        private int value;
+        private final int value;
         Rank(int value) {
             this.value = value;
+        }
+
+        public int getValue() {
+            return value;
         }
     }
 
     private Suit suit;
     private Rank rank;
 
-    public Card(Suit suit, Rank rank) {
+    public Card(Rank rank, Suit suit) {
         this.suit = suit;
         this.rank = rank;
     }
 
-    private Suit getSuit() {
+    public Suit getSuit() {
         return suit;
     }
 
-    private Rank getRank() {
+    public Rank getRank() {
         return rank;
     }
 
