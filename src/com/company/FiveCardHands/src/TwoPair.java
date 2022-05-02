@@ -9,7 +9,7 @@ public class TwoPair extends FiveCardHand {
         Card[] sortedFiveCardHandAscending = getSortedFiveCardsAscending(fiveCardHand);
         int numOfPairs = 0;
         Rank previousCardRank = sortedFiveCardHandAscending[0].getRank();
-        for (int i = 1; i < sortedFiveCardHandAscending.length; i++) {
+        for (int i = 1; i < NUM_OF_CARDS; i++) {
             Rank currentCardRank = sortedFiveCardHandAscending[i].getRank();
             if (previousCardRank == currentCardRank) {
                 numOfPairs++;

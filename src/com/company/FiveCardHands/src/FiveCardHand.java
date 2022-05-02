@@ -4,13 +4,16 @@ import com.company.Card;
 
 abstract class FiveCardHand {
 
+    protected static final int NUM_OF_CARDS = 5;
+
     protected static boolean matches(Card[] fiveCardHand) throws Exception {
+        // gosh darn static methods not being able to be abstract
         throw new Exception("This method should not be called from the FiveCardHand class!");
     }
 
     protected static Card[] getSortedFiveCardsAscending(Card[] fiveCardHand) {
-        Card[] sortedCards = new Card[5];
-        for (int i = 0; i < fiveCardHand.length; i++) {
+        Card[] sortedCards = new Card[NUM_OF_CARDS];
+        for (int i = 0; i < NUM_OF_CARDS; i++) {
             insertCardIntoSortedArrayAscending(sortedCards, fiveCardHand[i]);
         }
         return sortedCards;

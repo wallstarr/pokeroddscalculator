@@ -14,7 +14,7 @@ public class Straight extends FiveCardHand {
         System.out.println("Fifth card in sortedFiveCardHandAscending = " + sortedFiveCardHandAscending[4].getRank().getValue());
 
         Card lastCard = sortedFiveCardHandAscending[0];
-        for (int i = 1; i < sortedFiveCardHandAscending.length; i++) {
+        for (int i = 1; i < NUM_OF_CARDS; i++) {
             Card currentCard = sortedFiveCardHandAscending[i];
             if (currentCard.getRank().getValue() - lastCard.getRank().getValue() != 1) {
                 return false;
