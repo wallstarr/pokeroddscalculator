@@ -15,7 +15,7 @@ public class Main {
         fiveCardHand[3] = new Card(Rank.JACK, Suit.SPADES);
         fiveCardHand[4] = new Card(Rank.QUEEN, Suit.DIAMONDS);
 
-        System.out.println(TwoPair.isATwoPair(fiveCardHand));
+        System.out.println(TwoPair.matches(fiveCardHand));
     }
 
 

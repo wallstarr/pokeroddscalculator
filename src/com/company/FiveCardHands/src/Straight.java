@@ -4,7 +4,7 @@ import com.company.Card;
 
 public class Straight extends FiveCardHand {
 
-    public static boolean isAStraight(Card[] fiveCardHand) {
+    public static boolean matches(Card[] fiveCardHand) {
         Card[] sortedFiveCardHandAscending = getSortedFiveCardsAscending(fiveCardHand);
 
         System.out.println("First card in sortedFiveCardHandAscending = " + sortedFiveCardHandAscending[0].getRank().getValue());

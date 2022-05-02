@@ -5,7 +5,7 @@ import com.company.Card;
 public class StraightFlush extends FiveCardHand {
 
     public static boolean isAStraightFlush(Card[] fiveCardHand) {
-        return Straight.isAStraight(fiveCardHand) && Flush.isAFlush(fiveCardHand);
+        return Straight.matches(fiveCardHand) && Flush.matches(fiveCardHand);
     }
 
 }

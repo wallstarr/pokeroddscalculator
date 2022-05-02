@@ -3,6 +3,11 @@ package com.company.FiveCardHands.src;
 import com.company.Card;
 
 abstract class FiveCardHand {
+
+    protected static boolean matches(Card[] fiveCardHand) throws Exception {
+        throw new Exception();
+    }
+
     protected static Card[] getSortedFiveCardsAscending(Card[] fiveCardHand) {
         Card[] sortedCards = new Card[5];
         for (int i = 0; i < fiveCardHand.length; i++) {

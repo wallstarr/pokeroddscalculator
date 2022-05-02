@@ -5,7 +5,7 @@ import com.company.Card.Rank;
 
 public class TwoPair extends FiveCardHand {
 
-    public static boolean isATwoPair(Card[] fiveCardHand) {
+     public static boolean matches(Card[] fiveCardHand) {
         Card[] sortedFiveCardHandAscending = getSortedFiveCardsAscending(fiveCardHand);
         int numOfPairs = 0;
         Rank previousCardRank = sortedFiveCardHandAscending[0].getRank();
