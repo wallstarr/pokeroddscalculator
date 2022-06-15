@@ -9,8 +9,8 @@ public class FourOfAKind extends FiveCardHand {
 
         Card[] sortedFiveCardHandAscending = getSortedFiveCardsAscending(fiveCardHand);
 
-        boolean firstFourCardsAreSameRank = fiveCardHand[0].getRank() == fiveCardHand[3].getRank();
-        boolean latterFourCardsAreSameRank = fiveCardHand[1].getRank() == fiveCardHand[4].getRank();
+        boolean firstFourCardsAreSameRank = sortedFiveCardHandAscending[0].getRank() == sortedFiveCardHandAscending[3].getRank();
+        boolean latterFourCardsAreSameRank = sortedFiveCardHandAscending[1].getRank() == sortedFiveCardHandAscending[4].getRank();
         return firstFourCardsAreSameRank || latterFourCardsAreSameRank;
 
     }
